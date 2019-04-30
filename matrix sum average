@@ -1,0 +1,21 @@
+T = input()
+soma,m = 0,0
+C = [[0 for j in range(12)]for i in range(12)]
+for k in range(12):
+  for l in range(12):
+    C[k][l] = float(input())
+if T == "S":
+  for i in range(12):
+    for j in range(i+1,12):
+      if i == 11:
+        break
+      soma = soma + C[i][j]
+    print("%.1f"%soma)
+if T == "M":
+  for i in range(12):
+    for j in range(i+1,12):
+      if i == 11:
+        break
+      soma = soma + C[i][j]
+      m = soma/66
+  print("%.1f"%m)
