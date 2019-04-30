@@ -1,0 +1,7 @@
+n = int(input())
+hora = n // 3600
+seg_rest = n % 3600
+minutos = seg_rest // 60
+segundos = seg_rest % 60
+
+print(str(hora) + ":"+ str(minutos) + ":" + str(segundos))
