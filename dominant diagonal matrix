@@ -1,0 +1,7 @@
+def DiagonalDominant ( A) :
+ n = len( A )
+ for i in range ( n ) :
+  for j in range ( n ) :
+   if A [ i ][ i ] < A [i ][ j ]:
+     return False
+ return True
